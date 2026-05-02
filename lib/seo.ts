@@ -1,6 +1,6 @@
-export const siteUrl = 'https://noeralabs.com';
+export const siteUrl = 'https://kognifx.com';
 
 export const seoDefaults = {
-  siteName: 'Noera Labs',
+  siteName: 'Kognifx',
   locale: 'en_US',
 };

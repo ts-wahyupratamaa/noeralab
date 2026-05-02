@@ -8,21 +8,21 @@ export default function FAQPage() {
   const faqItems = [
     {
       id: '1',
-      question: 'What is Noera Labs?',
+      question: 'What is Kognifx?',
       answer:
-        'Noera Labs is a collective that combines human thinking and artificial intelligence to build real solutions, systems, and products.',
+        'Kognifx is a cognitive build collective that helps organizations convert complexity into structured, working systems.',
     },
     {
       id: '2',
-      question: 'How is Noera Labs different from a community?',
+      question: 'What problems does Kognifx solve?',
       answer:
-        'Most communities focus on discussion and learning. Noera Labs focuses on execution, contribution, and tangible output.',
+        'We solve unclear problem structures, inconsistent decisions, and execution bottlenecks that prevent ideas from becoming scalable solutions.',
     },
     {
       id: '3',
-      question: 'How does Noera Labs work?',
+      question: 'Where does Kognifx add value?',
       answer:
-        'The workflow is structured around identifying real problems, exploring solutions with AI, building prototypes, and delivering working results.',
+        'We add value in operational systems, procurement optimization, workflow automation, and decision-support tools.',
     },
   ];
 
@@ -35,8 +35,8 @@ export default function FAQPage() {
               Still exploring the idea? Here is the core model.
             </h1>
             <p className='text-lg text-muted-foreground mb-8'>
-              Noera Labs exists to turn intelligence into execution through a
-              system of collaborative building.
+              Kognifx turns complexity into clarity and clarity into working
+              systems.
             </p>
           </div>
           <div>

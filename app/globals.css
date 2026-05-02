@@ -34,12 +34,6 @@ html {
   }
 } */
 
-@media (min-width: 1280px) and (hover: hover) and (pointer: fine) {
-  * {
-    cursor: none !important;
-  }
-}
-
 @layer base {
   :root {
     --background: 0 0% 100%;

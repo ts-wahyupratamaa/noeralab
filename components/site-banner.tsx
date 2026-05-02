@@ -9,8 +9,8 @@ export function SiteBanner() {
           className="text-center text-sm leading-loose text-muted-background"
         >
           ✨
-          <span className="font-bold"> Noera Labs - </span>{" "}
-          Turning intelligence into real solutions. ✨
+          <span className="font-bold"> Kognifx - </span>{" "}
+          Cognition, Engineered. ✨
         </Link>
       </div>
       <hr className="absolute bottom-0 m-0 h-px w-full bg-neutral-200/30" />

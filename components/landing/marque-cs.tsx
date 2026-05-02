@@ -7,17 +7,17 @@ export function Testimoni() {
   return (
     <div className='h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden'>
       <h2 className='text-2xl md:text-3xl font-semibold text-center text-zinc-900 dark:text-white mb-2'>
-        What Noera Labs is built to do
+        What Kognifx is built to do
       </h2>
 
       <p className='text-center text-zinc-600 dark:text-zinc-400 max-w-2xl mb-8 px-4'>
-        A continuous build engine where people use structured collaboration and
-        AI to produce tangible outputs.
+        Illustrative enterprise scenarios inspired by real operational
+        complexity across major industries.
       </p>
       <InfiniteMovingCards
         items={testimonials}
         direction='right'
-        speed='slow'
+        speed='ultra-slow'
       />
     </div>
   );
@@ -26,71 +26,71 @@ export function Testimoni() {
 const testimonials = [
   {
     quote:
-      'Noera Labs is a collective that turns human thinking and artificial intelligence into real, working solutions.',
-    name: 'What',
-    title: 'A collective',
+      'Procurement decision mapping and approval workflow redesign for multi-entity operations with strict governance requirements.',
+    name: 'Maxwell Enterprise Indonesia',
+    title: 'Illustrative Use Case',
   },
 
   {
     quote:
-      'It bridges the gap between learning and execution by moving ideas into systems, prototypes, and products.',
-    name: 'Why',
-    title: 'Execution over discussion',
+      'Operational risk triage and escalation logic framework to improve decision consistency across distributed teams.',
+    name: 'Freeport Indonesia',
+    title: 'Illustrative Use Case',
   },
 
   {
     quote:
-      'Members are contributors, not passive participants. Everyone is expected to think critically and build.',
-    name: 'Who',
-    title: 'Builders and problem-solvers',
+      'Workflow intelligence layer for cross-functional planning, reducing fragmented handoffs and improving execution visibility.',
+    name: 'Unilever',
+    title: 'Illustrative Use Case',
   },
 
   {
     quote:
-      'The model is simple: identify real problems, explore with AI, prototype fast, and deliver measurable outputs.',
-    name: 'How',
-    title: 'Structured collaboration',
+      'Decision-support cockpit for leadership teams that need structured options, tradeoffs, and operational impact signals.',
+    name: 'Enterprise Healthcare Group',
+    title: 'Illustrative Use Case',
   },
 
   {
     quote:
-      'The first focus areas are digital systems, software, and AI-driven solutions with room to expand into applied technologies.',
-    name: 'Focus',
-    title: 'Software and AI systems',
+      'Automation blueprint for repetitive operational workflows with human-in-the-loop controls and measurable adoption targets.',
+    name: 'National Logistics Operator',
+    title: 'Illustrative Use Case',
   },
 
   {
     quote:
-      'AI is not used as a shortcut. It is used as a thinking partner to improve speed, structure, and outcomes.',
-    name: 'Principle',
-    title: 'Human + AI',
+      'Procurement intelligence model to prioritize vendor decisions and reduce cycle-time without compromising control quality.',
+    name: 'Energy & Resources Enterprise',
+    title: 'Illustrative Use Case',
   },
 
   {
     quote:
-      'Noera comes from the idea of thinking and understanding, then transforming insight into something real.',
-    name: 'Meaning',
-    title: 'From thought to action',
+      'Structured problem-solving system for strategy-to-execution alignment in high-complexity organizational environments.',
+    name: 'Regional Conglomerate',
+    title: 'Illustrative Use Case',
   },
 
   {
     quote:
-      'Success is measured by working solutions delivered, product quality, and the capability growth of the people building them.',
-    name: 'Success',
-    title: 'Measured by output',
+      'Decision architecture refresh to standardize judgement criteria and improve accountability in multi-layer governance.',
+    name: 'Financial Services Group',
+    title: 'Illustrative Use Case',
   },
 
   {
     quote:
-      'This is not a traditional community, incubator, or software house. It is a continuous learning and building engine.',
-    name: 'Difference',
-    title: 'A build engine',
+      'Operational command model combining cognition frameworks with AI acceleration to drive usable system outcomes.',
+    name: 'Industrial Operations Network',
+    title: 'Illustrative Use Case',
   },
 
   {
     quote:
-      'The long-term goal is to create a platform where capable individuals collaborate to produce real solutions at scale.',
-    name: 'Vision',
-    title: 'Collaborative intelligence',
+      'From fragmented planning to structured execution systems that can be adopted, measured, and scaled.',
+    name: 'Public Sector Transformation Program',
+    title: 'Illustrative Use Case',
   },
 ];

@@ -16,7 +16,7 @@ export const InfiniteMovingCards = ({
     title: string;
   }[];
   direction?: 'left' | 'right';
-  speed?: 'fast' | 'normal' | 'slow';
+  speed?: 'fast' | 'normal' | 'slow' | 'very-slow' | 'ultra-slow';
   pauseOnHover?: boolean;
   className?: string;
 }) => {
@@ -65,8 +65,12 @@ export const InfiniteMovingCards = ({
         containerRef.current.style.setProperty('--animation-duration', '40s');
       } else if (speed === 'normal') {
         containerRef.current.style.setProperty('--animation-duration', '50s');
-      } else {
+      } else if (speed === 'slow') {
         containerRef.current.style.setProperty('--animation-duration', '90s');
+      } else if (speed === 'very-slow') {
+        containerRef.current.style.setProperty('--animation-duration', '130s');
+      } else {
+        containerRef.current.style.setProperty('--animation-duration', '200s');
       }
     }
   };
@@ -81,7 +85,7 @@ export const InfiniteMovingCards = ({
       <ul
         ref={scrollerRef}
         className={cn(
-          'flex w-max min-w-full shrink-0 flex-nowrap gap-4 py-4',
+          'flex w-max min-w-full shrink-0 flex-nowrap gap-4 py-4 will-change-transform [transform:translateZ(0)] [backface-visibility:hidden]',
           start && 'animate-scroll',
           pauseOnHover && 'hover:[animation-play-state:paused]'
         )}
@@ -92,8 +96,7 @@ export const InfiniteMovingCards = ({
     relative w-[350px] max-w-full shrink-0 
     rounded-2xl border border-gray-300
     px-8 py-6 md:w-[450px]
-    bg-[rgba(255,255,255,0.06)] 
-    backdrop-blur-md 
+    bg-[rgba(255,255,255,0.05)] 
     dark:border-white/10 
   '
             key={item.name}

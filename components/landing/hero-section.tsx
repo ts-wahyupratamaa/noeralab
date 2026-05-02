@@ -27,23 +27,23 @@ export default function HeroSection() {
 
       <div className='pointer-events-none relative z-10 mx-auto max-w-5xl pt-[8rem] sm:pt-[9rem] md:pt-[11.5rem]'>
         <h1 className='bg-gradient-to-br dark:from-white from-black from-30% dark:to-white/40 to-black/40 bg-clip-text py-6 text-5xl font-medium leading-none tracking-tighter text-transparent text-balance sm:text-6xl md:text-7xl lg:text-8xl translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]'>
-          Turning Intelligence
+          Turning Complexity
           <br className='hidden md:block' />
-          into Real Solutions.
+          into Working Systems.
         </h1>
         <p className='mb-12 text-lg tracking-tight text-gray-400 md:text-xl text-balance translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]'>
-          Noera Labs is a collective of builders focused on combining human
-          thinking and AI to create working systems, practical products,
-          <br className='hidden md:block' /> and real-world solutions.
+          Kognifx helps organizations solve complex operational and decision
+          problems by turning fragmented thinking into structured systems,
+          <br className='hidden md:block' /> accelerated by AI.
         </p>
 
         <a
           href='#'
-          aria-label='Start a conversation on WhatsApp'
+          aria-label='Start a strategic conversation'
           className='pointer-events-auto relative z-20 inline-flex'
         >
           <InteractiveHoverButton>
-            Start a Conversation
+            Start Strategic Discussion
           </InteractiveHoverButton>
         </a>
       </div>
@@ -66,7 +66,7 @@ export default function HeroSection() {
 
           <Image
             src='/sectionshow.png'
-            alt='Noera Labs hero preview'
+            alt='Kognifx hero preview'
             width={1600}
             height={900}
             priority

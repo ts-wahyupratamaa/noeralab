@@ -17,21 +17,21 @@ interface FAQSectionProps {
 const defaultFAQs: FAQItem[] = [
   {
     id: '1',
-    question: 'What is Noera Labs?',
+    question: 'What is Kognifx?',
     answer:
-      'Noera Labs is a collective that combines human thinking and artificial intelligence to build real solutions, systems, and products.',
+      'Kognifx is a cognitive build collective focused on turning complex thinking into structured, working systems.',
   },
   {
     id: '2',
-    question: 'How is Noera Labs different from a community?',
+    question: 'What problems does Kognifx solve?',
     answer:
-      'Most communities focus on discussion and learning. Noera Labs focuses on execution, contribution, and tangible output.',
+      'We solve unclear problem structures, inconsistent decisions, and execution bottlenecks that block scalable implementation.',
   },
   {
     id: '3',
-    question: 'How does Noera Labs work?',
+    question: 'How does Kognifx work?',
     answer:
-      'The workflow is structured around identifying real problems, exploring solutions with AI, building prototypes, and delivering working results.',
+      'We clarify, structure, then build, using AI to accelerate delivery of usable and scalable systems.',
   },
 ];
 

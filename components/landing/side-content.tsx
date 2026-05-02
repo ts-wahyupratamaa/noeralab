@@ -18,8 +18,8 @@ export default function SideUnik() {
           </div>
           <div className='mx-auto w-full max-w-2xl lg:mx-0'>
             <h2 className='bg-gradient-to-br dark:from-white from-black from-30% dark:to-white/40 to-black/40 bg-clip-text py-2 text-4xl font-medium leading-[0.95] tracking-tighter text-transparent text-balance animate-fade-in opacity-0 [--animation-delay:200ms] sm:text-5xl md:text-6xl lg:text-6xl'>
-              Built by a collective that treats thinking as the starting point
-              of execution, not the end of discussion.
+              We clarify, structure, and then build. Cognition is the new
+              currency, AI enhances it, and systems apply it.
             </h2>
           </div>
         </div>
