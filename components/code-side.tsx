@@ -20,7 +20,7 @@ export function TerminalDemo() {
   return (
     <Terminal>
       <TypingAnimation>
-        &gt; satutitik execute --target=&quot;Your-Goal&quot;
+        &gt; noeralab build --target=&quot;real-solution&quot;
       </TypingAnimation>
       {steps.map((step, index) => (
         <AnimatedSpan key={index} className={stepColor}>
@@ -29,10 +29,10 @@ export function TerminalDemo() {
       ))}
       <AnimatedSpan className='text-blue-500'>
         <span>ℹ Status:</span>
-        <span className='pl-2'>100% Solved.</span>
+        <span className='pl-2'>Prototype validated.</span>
       </AnimatedSpan>
       <TypingAnimation className='text-muted-foreground'>
-        Task completed. Ready for handover.
+        Intelligence transformed into execution.
       </TypingAnimation>
     </Terminal>
   );

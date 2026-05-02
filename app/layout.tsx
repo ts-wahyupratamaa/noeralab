@@ -13,20 +13,20 @@ const fontSans = FontSans({
   variable: '--font-sans',
 });
 export const metadata: Metadata = {
-  title: 'satutitik.id - Layanan Solusi IT, Riset, dan Penjoki Tugas Digital',
+  title: 'Noera Labs - Turning Intelligence into Real Solutions',
   description:
-    'satutitik.id melayani solusi end-to-end: joki proyek IT, riset & penulisan ilmiah, manipulasi data besar, hingga pendampingan seminar coding. Fokus solusi cepat, profesional, dan siap untuk startup, akademisi, serta tim engineering.',
+    'Noera Labs is a collective that combines human thinking and artificial intelligence to build real solutions, working systems, and tangible products.',
   keywords: [
-    'satutitik.id',
-    'joki proyek',
-    'layanan IT',
-    'pengembangan perangkat lunak',
-    'penulisan ilmiah',
-    'publikasi ilmiah',
-    'manipulasi data',
-    'seminar coding',
-    'freelance developer',
-    'konsultan software',
+    'Noera Labs',
+    'collective intelligence',
+    'human and AI collaboration',
+    'AI product development',
+    'digital systems',
+    'software development',
+    'applied artificial intelligence',
+    'real solutions',
+    'working products',
+    'emerging technologies',
   ],
   metadataBase: new URL(siteUrl),
   alternates: {
@@ -51,9 +51,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: siteUrl,
-    title: 'satutitik.id - Layanan Solusi IT, Riset, dan Penjoki Tugas Digital',
+    title: 'Noera Labs - Turning Intelligence into Real Solutions',
     description:
-      'satutitik.id melayani solusi end-to-end: joki proyek IT, riset & penulisan ilmiah, manipulasi data besar, hingga pendampingan seminar coding. Fokus solusi cepat, profesional, dan siap untuk startup, akademisi, serta tim engineering.',
+      'Noera Labs is a collective that combines human thinking and artificial intelligence to build real solutions, working systems, and tangible products.',
     siteName: seoDefaults.siteName,
     locale: seoDefaults.locale,
     images: [
@@ -61,15 +61,15 @@ export const metadata: Metadata = {
         url: new URL('/showgoogle.png', siteUrl).toString(),
         width: 512,
         height: 512,
-        alt: 'satutitik.id layanan solusi IT',
+        alt: 'Noera Labs brand preview',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'satutitik.id - Layanan Solusi IT, Riset, dan Penjoki Tugas Digital',
+    title: 'Noera Labs - Turning Intelligence into Real Solutions',
     description:
-      'satutitik.id melayani solusi end-to-end: joki proyek IT, riset & penulisan ilmiah, manipulasi data besar, hingga pendampingan seminar coding. Fokus solusi cepat, profesional, dan siap untuk startup, akademisi, serta tim engineering.',
+      'Noera Labs is a collective that combines human thinking and artificial intelligence to build real solutions, working systems, and tangible products.',
     images: [new URL('/showgoogle.png', siteUrl).toString()],
     site: seoDefaults.siteName,
   },

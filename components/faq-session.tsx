@@ -17,21 +17,21 @@ interface FAQSectionProps {
 const defaultFAQs: FAQItem[] = [
   {
     id: '1',
-    question: 'Berapa lama proyek dikerjakan? ',
+    question: 'What is Noera Labs?',
     answer:
-      'Beragam berdasarkan kompleksitas. Untuk proyek sederhana, biasanya 1 - 3 hari.',
+      'Noera Labs is a collective that combines human thinking and artificial intelligence to build real solutions, systems, and products.',
   },
   {
     id: '2',
-    question: 'Apakah bisa di-refund',
+    question: 'How is Noera Labs different from a community?',
     answer:
-      'Proyek yang sudah disepakati (DP sudah ditransfer) tidak dapat di-refund',
+      'Most communities focus on discussion and learning. Noera Labs focuses on execution, contribution, and tangible output.',
   },
   {
     id: '3',
-    question: 'Apakah ada jatah revisi?',
+    question: 'How does Noera Labs work?',
     answer:
-      'Ada. Maksimal 7x revisi minor (contoh: mengubah warna, tambahan fungsionalitas sederhana, dll.)',
+      'The workflow is structured around identifying real problems, exploring solutions with AI, building prototypes, and delivering working results.',
   },
 ];
 

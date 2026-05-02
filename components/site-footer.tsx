@@ -6,17 +6,17 @@ import Image from 'next/image';
 
 const footerSocials = [
   {
-    href: 'https://www.instagram.com/satutitik.ids/',
+    href: '#',
     name: 'Instagram',
     icon: <FaInstagram className='h-4 w-4' />,
   },
   {
-    href: 'https://discord.gg/58z2GKNd',
+    href: '#',
     name: 'Discord',
     icon: <DiscordLogoIcon className='h-4 w-4' />,
   },
   {
-    href: 'mailto:wahyufiver.id@gmail.com?subject=Customer%20Service%20Report',
+    href: '#',
     name: 'Customer Service',
     icon: <RiCustomerService2Fill className='h-4 w-4' />,
   },
@@ -34,7 +34,7 @@ export function SiteFooter() {
             <div className='group inline-flex items-center gap-4 pointer-events-auto'>
               <Image
                 src='/icon2.png'
-                alt='satutitik.id logo'
+                alt='Noera Labs logo'
                 width={144}
                 height={144}
                 loading='lazy'
@@ -46,7 +46,7 @@ export function SiteFooter() {
                 rounded-lg bg-white/60 dark:bg-black/40 backdrop-blur border border-gray-300/30 shadow-sm '
                 aria-hidden='true'
               >
-                alow nore disini, {' '}
+                Hi, Noer here.{' '}
                 👋🏻
               </span>
             </div>
@@ -60,8 +60,6 @@ export function SiteFooter() {
                 <li key={social.name}>
                   <Link
                     href={social.href}
-                    target='_blank'
-                    rel='noreferrer noopener'
                     aria-label={social.name}
                     className='text-gray-500 hover:text-gray-900 dark:hover:text-gray-600 fill-gray-500 hover:fill-gray-900 dark:hover:fill-gray-600'
                   >
@@ -73,7 +71,7 @@ export function SiteFooter() {
           </nav>
           <span className='text-[12px] text-gray-500 sm:text-center dark:text-gray-400'>
             © {new Date().getFullYear()}{' '}
-            <span className='cursor-pointer'>satutitik.id </span>
+            <span className='cursor-pointer'>Noera Labs </span>
             All rights reserved.
           </span>
         </div>

@@ -8,21 +8,21 @@ export default function FAQPage() {
   const faqItems = [
     {
       id: '1',
-      question: 'Berapa lama proyek dikerjakan? ',
+      question: 'What is Noera Labs?',
       answer:
-        'Beragam berdasarkan kompleksitas. Untuk proyek sederhana, biasanya 1 - 3 hari.',
+        'Noera Labs is a collective that combines human thinking and artificial intelligence to build real solutions, systems, and products.',
     },
     {
       id: '2',
-      question: 'Apakah bisa di-refund',
+      question: 'How is Noera Labs different from a community?',
       answer:
-        'Proyek yang sudah disepakati (DP sudah ditransfer) tidak dapat di-refund',
+        'Most communities focus on discussion and learning. Noera Labs focuses on execution, contribution, and tangible output.',
     },
     {
       id: '3',
-      question: 'Apakah ada jatah revisi?',
+      question: 'How does Noera Labs work?',
       answer:
-        'Ada. Maksimal 7x revisi minor (contoh: mengubah warna, tambahan fungsionalitas sederhana, dll.)',
+        'The workflow is structured around identifying real problems, exploring solutions with AI, building prototypes, and delivering working results.',
     },
   ];
 
@@ -32,11 +32,11 @@ export default function FAQPage() {
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16'>
           <div className='flex flex-col justify-start'>
             <h1 className='bg-gradient-to-br dark:from-white from-black from-30% dark:to-white/40 to-black/40 bg-clip-text py-6 text-5xl font-medium leading-none tracking-tighter text-transparent text-balance sm:text-6xl md:text-7xl lg:text-5xl translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]'>
-              Masih bingung? Tenang, kami siap membantumu
+              Still exploring the idea? Here is the core model.
             </h1>
             <p className='text-lg text-muted-foreground mb-8'>
-              Jika ada pertanyaan lain yang belum ada di sini boleh tanyakan dan
-              konsultasikan langung ke kita
+              Noera Labs exists to turn intelligence into execution through a
+              system of collaborative building.
             </p>
           </div>
           <div>

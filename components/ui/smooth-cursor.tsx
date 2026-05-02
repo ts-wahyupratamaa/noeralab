@@ -89,6 +89,7 @@ export function SmoothCursor({
     restDelta: 0.001,
   },
 }: SmoothCursorProps) {
+  const [isEnabled, setIsEnabled] = useState(false)
   const [isMoving, setIsMoving] = useState(false)
   const lastMousePos = useRef<Position>({ x: 0, y: 0 })
   const velocity = useRef<Position>({ x: 0, y: 0 })
@@ -110,6 +111,35 @@ export function SmoothCursor({
   })
 
   useEffect(() => {
+    const mediaQuery = window.matchMedia(
+      "(min-width: 1280px) and (hover: hover) and (pointer: fine)"
+    )
+
+    const syncEnabledState = () => {
+      const userAgent = navigator.userAgent.toLowerCase()
+      const isTabletLike =
+        /ipad|tablet|android(?!.*mobile)/.test(userAgent) ||
+        (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1)
+
+      setIsEnabled(mediaQuery.matches && !isTabletLike)
+    }
+
+    syncEnabledState()
+    mediaQuery.addEventListener("change", syncEnabledState)
+    window.addEventListener("resize", syncEnabledState)
+
+    return () => {
+      mediaQuery.removeEventListener("change", syncEnabledState)
+      window.removeEventListener("resize", syncEnabledState)
+    }
+  }, [])
+
+  useEffect(() => {
+    if (!isEnabled) {
+      document.body.style.cursor = "auto"
+      return
+    }
+
     const updateVelocity = (currentPos: Position) => {
       const currentTime = Date.now()
       const deltaTime = currentTime - lastUpdateTime.current
@@ -178,7 +208,9 @@ export function SmoothCursor({
       document.body.style.cursor = "auto"
       if (rafId) cancelAnimationFrame(rafId)
     }
-  }, [cursorX, cursorY, rotation, scale])
+  }, [cursorX, cursorY, rotation, scale, isEnabled])
+
+  if (!isEnabled) return null
 
   return (
     <motion.div

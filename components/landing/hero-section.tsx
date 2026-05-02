@@ -1,14 +1,10 @@
 'use client';
 
 import { BorderBeam } from '@/components/magicui/border-beam';
-import TextShimmer from '@/components/magicui/text-shimmer';
-import { Button } from '@/components/ui/button';
-import { ArrowRightIcon } from '@radix-ui/react-icons';
+import { SplineFrame } from '@/components/landing/spline-frame';
 import { useInView } from 'framer-motion';
 import Image from 'next/image';
 import { useRef } from 'react';
-import { motion } from 'motion/react';
-import { LampContainer } from '../ui/lamp';
 import InteractiveHoverButton from '@/components/ui/interactive-hover-button';
 
 export default function HeroSection() {
@@ -19,43 +15,41 @@ export default function HeroSection() {
       id='hero'
       className='relative mx-auto mt-32 max-w-[80rem] px-6 text-center md:px-8'
     >
-      <div className='w-full h-20 flex items-center justify-center px-6'></div>
-      <LampContainer>
-        <motion.h1
-          initial={{ opacity: 0.5, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{
-            delay: 0.3,
-            duration: 0.8,
-            ease: 'easeInOut',
-          }}
-        ></motion.h1>
-      </LampContainer>
+      <div className='pointer-events-none md:pointer-events-auto absolute inset-x-0 top-0 h-[36rem] overflow-hidden sm:h-[40rem] md:h-[44rem] lg:h-[46rem]'>
+        <div className='absolute inset-x-0 top-0 h-full overflow-hidden [mask-image:linear-gradient(to_bottom,black_0%,black_42%,transparent_72%)]'>
+          <div className='h-full w-full scale-[1.02] translate-y-[-1rem] sm:scale-[1.04] sm:translate-y-[-1.5rem] md:scale-[1.08] md:translate-y-[-2.5rem]'>
+            <SplineFrame scene='https://prod.spline.design/GnVCcsZDFwuyvsaX/scene.splinecode' />
+          </div>
+        </div>
+        <div className='pointer-events-none absolute inset-x-0 bottom-0 z-10 h-32 bg-gradient-to-t from-background via-background/80 to-transparent sm:h-36 md:h-44' />
+        <div className='pointer-events-none absolute right-0 top-0 z-10 h-full w-24 bg-gradient-to-l from-background via-background to-transparent sm:w-32 md:w-48' />
+      </div>
 
-      <h1 className='bg-gradient-to-br dark:from-white from-black from-30% dark:to-white/40 to-black/40 bg-clip-text py-6 text-5xl font-medium leading-none tracking-tighter text-transparent text-balance sm:text-6xl md:text-7xl lg:text-8xl translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]'>
-        Segala Kendala Teknis &
-        <br className='hidden md:block' />
-        Ilmiah, Tuntas di Satu Titik.
-      </h1>
-      <p className='mb-12 text-lg tracking-tight text-gray-400 md:text-xl text-balance translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]'>
-        Mulai dari Riset, Pengembangan Sistem, hingga Tugas Digital
-        <br className='hidden md:block' /> semua kami kerjakan dengan rapi dan
-        tepat waktu ribet
-      </p>
+      <div className='pointer-events-none relative z-10 mx-auto max-w-5xl pt-[8rem] sm:pt-[9rem] md:pt-[11.5rem]'>
+        <h1 className='bg-gradient-to-br dark:from-white from-black from-30% dark:to-white/40 to-black/40 bg-clip-text py-6 text-5xl font-medium leading-none tracking-tighter text-transparent text-balance sm:text-6xl md:text-7xl lg:text-8xl translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]'>
+          Turning Intelligence
+          <br className='hidden md:block' />
+          into Real Solutions.
+        </h1>
+        <p className='mb-12 text-lg tracking-tight text-gray-400 md:text-xl text-balance translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]'>
+          Noera Labs is a collective of builders focused on combining human
+          thinking and AI to create working systems, practical products,
+          <br className='hidden md:block' /> and real-world solutions.
+        </p>
 
-      <a
-        href='https://wa.me/62895326370143?text=Halo!%20Saya%20tertarik%20dengan%20layanan%20satutitik.id.%20Bisa%20konsultasi%20dulu?%20😊'
-        target='_blank'
-        rel='noopener noreferrer'
-        aria-label='Chat via WhatsApp'
-      >
-        <InteractiveHoverButton>
-        Chat via WhatsApp
-        </InteractiveHoverButton>
-      </a>
+        <a
+          href='#'
+          aria-label='Start a conversation on WhatsApp'
+          className='pointer-events-auto relative z-20 inline-flex'
+        >
+          <InteractiveHoverButton>
+            Start a Conversation
+          </InteractiveHoverButton>
+        </a>
+      </div>
       <div
         ref={ref}
-        className='relative mt-[8rem]  animate-fade-up opacity-0 [--animation-delay:400ms] [perspective:2000px] after:absolute after:inset-0 after:z-50 after:[background:linear-gradient(to_top,hsl(var(--background))_30%,transparent)]'
+        className='hidden relative mt-[8rem] animate-fade-up opacity-0 [--animation-delay:400ms] [perspective:2000px] after:absolute after:inset-0 after:z-50 after:[background:linear-gradient(to_top,hsl(var(--background))_30%,transparent)]'
       >
         <div
           className={`rounded-xl border border-white/10 bg-white bg-opacity-[0.01] before:absolute before:bottom-1/2 before:left-0 before:top-0 before:h-full before:w-full before:opacity-0 before:[filter:blur(180px)] before:[background-image:linear-gradient(to_bottom,var(--color-one),var(--color-one),transparent_40%)] ${
@@ -72,7 +66,7 @@ export default function HeroSection() {
 
           <Image
             src='/sectionshow.png'
-            alt='Hero Image'
+            alt='Noera Labs hero preview'
             width={1600}
             height={900}
             priority

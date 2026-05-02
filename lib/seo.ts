@@ -1,6 +1,6 @@
-export const siteUrl = 'https://satutitik.engineer';
+export const siteUrl = 'https://noeralabs.com';
 
 export const seoDefaults = {
-  siteName: 'satutitik.id',
-  locale: 'id_ID',
+  siteName: 'Noera Labs',
+  locale: 'en_US',
 };

@@ -1,21 +1,29 @@
-import { TerminalDemo } from '@/components/code-side';
+import { SplineFrame } from '@/components/landing/spline-frame';
 
 export default function SideUnik() {
   return (
-    <footer>
-      <div className='mx-auto w-full max-w-screen-xl xl:pb-2 '>
-        <div className='md:flex md:justify-between px-8 p-4 py-16 sm:pb-16 gap-16'>
-          <div className='mb-12 flex-col flex gap-4 min-h-[400px] md:min-h-[500px]'>
-            <TerminalDemo />
+    <section>
+      <div className='mx-auto w-full max-w-screen-xl px-6 py-24 md:px-8 lg:py-28'>
+        <div className='grid items-center gap-12 lg:grid-cols-[minmax(0,36rem)_minmax(0,1fr)] lg:gap-16'>
+          <div className='pointer-events-none md:pointer-events-auto relative mx-auto w-full max-w-[36rem] overflow-hidden rounded-2xl border border-white/10 bg-background/40'>
+            <div className='h-[24rem] w-full overflow-hidden sm:h-[28rem] lg:h-[30rem]'>
+              <div className='h-full w-full'>
+                <SplineFrame
+                  scene='https://prod.spline.design/S9N9kEGI69dOpgLf/scene.splinecode'
+                  lazy
+                />
+              </div>
+            </div>
+            <div className='pointer-events-none absolute bottom-0 right-0 z-10 h-32 w-72 rounded-tl-[2.5rem] bg-background sm:h-36 sm:w-80' />
           </div>
-          <div className=''>
-            <span className='bg-gradient-to-br dark:from-white from-black from-30% dark:to-white/40 to-black/40 bg-clip-text py-6 text-5xl font-medium leading-none tracking-tighter text-transparent text-balance sm:text-6xl md:text-7xl lg:text-6xl translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]'>
-              Ditangani langsung oleh praktisi mahir dan peneliti berpengalaman.
-              Fokus kami hasil presisi, bukan asal jadi
-            </span>
+          <div className='mx-auto w-full max-w-2xl lg:mx-0'>
+            <h2 className='bg-gradient-to-br dark:from-white from-black from-30% dark:to-white/40 to-black/40 bg-clip-text py-2 text-4xl font-medium leading-[0.95] tracking-tighter text-transparent text-balance animate-fade-in opacity-0 [--animation-delay:200ms] sm:text-5xl md:text-6xl lg:text-6xl'>
+              Built by a collective that treats thinking as the starting point
+              of execution, not the end of discussion.
+            </h2>
           </div>
         </div>
       </div>
-    </footer>
+    </section>
   );
 }
