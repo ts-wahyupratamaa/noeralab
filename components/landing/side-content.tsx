@@ -5,12 +5,14 @@ export default function SideUnik() {
     <section>
       <div className='mx-auto w-full max-w-screen-xl px-6 py-24 md:px-8 lg:py-28'>
         <div className='grid items-center gap-12 lg:grid-cols-[minmax(0,36rem)_minmax(0,1fr)] lg:gap-16'>
-          <div className='pointer-events-none md:pointer-events-auto relative mx-auto w-full max-w-[36rem] overflow-hidden rounded-2xl border border-white/10 bg-background/40'>
+          <div className='pointer-events-none md:pointer-events-auto relative mx-auto w-full max-w-[36rem] overflow-hidden rounded-2xl bg-background/40'>
             <div className='h-[24rem] w-full overflow-hidden sm:h-[28rem] lg:h-[30rem]'>
               <div className='h-full w-full'>
                 <SplineFrame
                   scene='https://prod.spline.design/S9N9kEGI69dOpgLf/scene.splinecode'
                   lazy
+                  inViewAmount={0.35}
+                  inViewMargin='120px 0px'
                 />
               </div>
             </div>

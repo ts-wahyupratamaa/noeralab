@@ -8,18 +8,22 @@ interface SplineFrameProps {
   scene: string;
   lazy?: boolean;
   className?: string;
+  inViewAmount?: number;
+  inViewMargin?: string;
 }
 
 export function SplineFrame({
   scene,
   lazy = false,
   className = '',
+  inViewAmount = 0.15,
+  inViewMargin = '200px 0px',
 }: SplineFrameProps) {
   const ref = useRef<HTMLDivElement | null>(null);
   const isInView = useInView(ref, {
     once: true,
-    amount: 0.15,
-    margin: '200px 0px',
+    amount: inViewAmount,
+    margin: inViewMargin,
   });
   const [isLoaded, setIsLoaded] = useState(false);
 
