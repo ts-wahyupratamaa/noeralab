@@ -5,7 +5,7 @@ import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards';
 
 export function Testimoni() {
   return (
-    <div className='h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden'>
+    <section className='h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden px-4 sm:px-6 lg:px-10'>
       <h2 className='text-2xl md:text-3xl font-semibold text-center text-zinc-900 dark:text-white mb-2'>
         What Kognifx is built to do
       </h2>
@@ -18,8 +18,9 @@ export function Testimoni() {
         items={testimonials}
         direction='right'
         speed='ultra-slow'
+        className='w-full max-w-[1280px] mx-auto'
       />
-    </div>
+    </section>
   );
 }
 
